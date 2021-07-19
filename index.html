@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden</title>
+    <!--  Semantic-Ui -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BootStrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    --><!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <i class="braille icon"></i>
+            <h1>Wooden.</h1>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-buttons">
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                        <i class="fas fa-cart-plus"></i>
+                    </span>
+                    <div class="cart-items">0</div>
+                </div>
+                <i class="heart outline icon nav-heart" style="font-size: 1rem;"></i>
+                <i class="search icon nav-search" style="font-size: 1rem;"></i>
+            </div>
+            
+        </div>
+    </nav>
+    <!--end of navbar-->
+    <!--hero-->
+    <header class="hero">
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Wood &</h1>
+                <h1>Cloth Sofa</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                <a href="">buy now</a>
+            </div>
+            <div class="banner-img">
+                <img src="./images/banner-img.png" alt="Sofa">
+            </div>
+        </div>
+    </header>
+    <!--end of the hero-->
+    <!--Category-->
+    <section class="category">
+        <div class="category-title">
+            <h1>Featured Category</h1>
+        </div>
+        <div class="category-items">
+            <div class="category-row">
+                <div class="category-block block-1">
+                    <div class="item-title">
+                        <p>Premium Quality</p>
+                        <h4>Latest foam Sofa</h4>
+                    </div>
+                    <div class="item-img">
+                        <img src="./images/category-1.png" alt="Sofa">
+                    </div>
+                </div>
+                <div class="category-block block-2">
+                    <div class="item-title">
+                        <p>Premium Quality</p>
+                        <h4>Latest foam Sofa</h4>
+                    </div>
+                    <div class="item-img">
+                        <img src="./images/category-2.png"  alt="Sofa">
+                    </div>
+                </div>
+            </div>
+            <div class="category-row">
+                <div class="category-block block-3">
+                    <div class="item-title">
+                        <p>Premium Quality</p>
+                        <h4>Latest foam Sofa</h4>
+                    </div>
+                    <div class="item-img">
+                        <img src="./images/category-3.png"  alt="Sofa">
+                    </div>
+                </div>
+                <div class="category-block block-4">
+                    <div class="item-title">
+                        <p>Premium Quality</p>
+                        <h4>Latest foam Sofa</h4>
+                    </div>
+                    <div class="item-img">
+                        <img src="./images/category-4.png"  alt="Sofa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of Category -->
+    <!--products-->
+    <section class="products">
+        <div class="section-title">
+            <h1>our products</h1>
+        </div>
+        <div class="products-center">
+            
+        </div>
+    </section>
+    <!--end of the products-->
+    <!--cart-->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!--cart item-->
+                <!-- <div class="cart-item">
+                    
+                </div> -->
+                <!--end of cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>your total: $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!--end of cart-->
+    <!-- blog -->
+    <section class="blog">
+        <div class="blog-img">
+            <img src="./images/blog-img.png" alt="Furniture">
+        </div>
+        <div class="blog-content">
+            <h2>Weekly Sale on 60% Off All Products</h2>
+            <div class="blog-countdown">
+                <div>
+                    <h6>Days</h6>
+                    <p class="days"></p>
+                </div>
+                <div>
+                    <h6>Hours</h6>
+                    <p class="hours"></p>
+                </div>
+                <div>
+                    <h6>Minutes</h6>
+                    <p class="minutes"></p>
+                </div>
+                <div>
+                    <h6>Seconds</h6>
+                    <p class="seconds"></p>
+                </div>
+            </div>
+            <div class="blog-button"> 
+                <input type="text" placeholder="Enter Email Address">
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-cards">
+        <div class="cards-title">
+            <h2>Best Sellers</h2>
+            <div class="title-icons">
+                <i class="angle left icon"></i>
+                <i class="angle right icon"></i>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="ui card">
+                <div class="ui slide masked reveal image">
+                  <img src="./images/lawson.png" class="visible content">
+                  <img src="./images/chesterfield.png" class="hidden content">
+                </div>
+                <div class="content">
+                  <a class="header">Lawson &amp; Chesterfield</a>
+                  <div class="meta">
+                    <span>$599</span>
+                  </div>
+                </div>
+                <div class="extra content">
+                  <a>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star outline icon"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="ui card">
+                <div class="ui slide masked reveal image">
+                  <img src="./images/loveseat.png" class="visible content">
+                  <img src="./images/sectional.png" class="hidden content">
+                </div>
+                <div class="content">
+                  <a class="header">Loveseat &amp; Sectional</a>
+                  <div class="meta">
+                    <span>$750</span>
+                  </div>
+                </div>
+                <div class="extra content">
+                  <a>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star outline icon"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="ui card">
+                <div class="ui slide masked reveal image">
+                  <img src="./images/cabroille.png" class="visible content">
+                  <img src="./images/lounge.png" class="hidden content">
+                </div>
+                <div class="content">
+                  <a class="header">Cabriolle &amp; Chaise Lounge</a>
+                  <div class="meta">
+                    <span>$479</span>
+                  </div>
+                </div>
+                <div class="extra content">
+                  <a>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star outline icon"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="ui card">
+                <div class="ui slide masked reveal image">
+                  <img src="./images/bridgewater.png" class="visible content">
+                  <img src="./images/divan.png" class="hidden content">
+                </div>
+                <div class="content">
+                  <a class="header">BridgeWater &amp; Divan</a>
+                  <div class="meta">
+                    <span>$1599</span>
+                    <div class="ui star rating" data-rating="3"></div>
+                  </div>
+                </div>
+                <div class="extra content">
+                  <a>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star icon"></i>
+                    <i class="star outline icon"></i>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blog -->
+    <!-- contact  -->
+    <section class="contact">
+        <div class="contact-title">
+           <p>Join our Newsletter</p>
+            <h2>Subscribe to get Updated with new offers</h2> 
+        </div>
+        <div class="contact-inputs">
+            <input type="text" placeholder="Enter Email Address">
+            <button>Subscribe Now</button>    
+        </div>
+    </section>
+    <!--  End of contact-->
+
+    <!-- footer-->
+    <footer>
+        <div class="footer">
+        <div class="footer-title">
+            <h3>Wooden.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, similique vel adipisci dolores nemo reiciendis in architecto accusantium.</p>
+            <div class="footer-title-icons">
+                <i class="facebook icon"></i>
+                <i class="instagram icon"></i>
+                <i class="twitter icon"></i>
+                <i class="pinterest p icon"></i>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="links-col">
+                <h5>Home</h5>
+                <ul>
+                    <li>Demos</li>
+                    <li>Pages</li>
+                    <li>Events</li>
+                    <li>About us</li>
+                </ul>
+            </div>
+            <div class="links-col">
+                <h5>Category</h5>
+                <ul>
+                    <li>Featured</li>
+                    <li>Latest</li>
+                    <li>Lorem ipsum</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+            <div class="links-col">
+                <h5>Shop</h5>
+                <ul>
+                    <li>Best Sellers</li>
+                    <li>High rated</li>
+                    <li>Modern</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+            </div>
+            <div class="links-col">
+                <h5>Blog</h5>
+                <ul>
+                    <li>Promotions</li>
+                    <li>Discount</li>
+                    <li>Products</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="copy">Copyright &copy;2021. All rights reserved.</p>
+    </footer>
+
+    <!-- end of footer -->
+
+    <script src="https://kit.fontawesome.com/40ca520944.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <!--  Semantic-ui  -->
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+
